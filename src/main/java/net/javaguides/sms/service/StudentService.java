@@ -6,4 +6,6 @@ import net.javaguides.sms.entitity.Student;
 
 public interface StudentService {
     List<Student> getAllStudents();
+
+    Student saveStudent(Student student);
 }
