@@ -22,13 +22,6 @@ public class StudentManagementSystemApplication implements CommandLineRunner {
                                                       // the first method to run inside that thread instance. Can be
                                                       // used to initialize objects that helps stave off of nullpointer
                                                       // exception.
-        // It is some logic to save data on run of application
-        // Student student1 = new Student("Ramesh", "Fadatare", "ramesh@gmail.com");
-        // studentRepository.save(student1);
-        // Student student2 = new Student("Sanjay", "Jadhav", "sanjay@gmail.com");
-        // studentRepository.save(student2);
-        // Student student3 = new Student("Tony", "Stark", "tony@gmail.com");
-        // studentRepository.save(student3);
 
     }
 

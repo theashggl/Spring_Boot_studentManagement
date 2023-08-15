@@ -7,15 +7,20 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
-@Table(name = "Students")
+@Entity // This is the annotation to declare the class can be mapped to the table in
+        // JPA.
+@Table(name = "Students") // Declares this class entitiy to be of the Students tbale in database. Creates
+                          // the table if not present.
 public class Student {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // Mandatory in JPA to define this variable in every entity which is the primary
+        // key of the table.
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // This annotatin provides a way to generate primary key. In
+                                                        // case of the IDENTITY generation type, it generates an
+                                                        // incrementing id on every addition of data in the table.
     private long id;
 
-    @Column(name = "first_name", nullable = false)
+    @Column(name = "first_name", nullable = false) // Column definition through this annotation
     private String firstName;
 
     @Column(name = "last_name")
