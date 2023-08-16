@@ -4,7 +4,7 @@ import java.util.List;
 
 import net.javaguides.sms.entitity.Student;
 
-public interface StudentService {// Todo know about this in detail.
+public interface StudentService {// to achieve abstraction
     List<Student> getAllStudents();
 
     Student saveStudent(Student student);
